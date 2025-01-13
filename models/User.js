@@ -11,8 +11,8 @@ class User {
   }
 
   static async findById(id) {
-
-      const query = `select id, username, firstName, lastName, email, avatar from users WHERE id = ?`
+const query = 
+      'select id, username, firstName, lastName, email, avatar from users WHERE id = ?'
       const results = await db.raw(query, [id])
       return results[0]
     }
