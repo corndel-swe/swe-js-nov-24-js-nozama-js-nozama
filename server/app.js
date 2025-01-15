@@ -1,4 +1,5 @@
 import express from 'express'
+import reviewsRouter from './routes/reviewRoutes'
 
 const app = express()
 app.use(express.json())
